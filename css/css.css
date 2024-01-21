@@ -1,0 +1,845 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.boxcenter {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.row2 {
+  float: left;
+  width: 100%;
+}
+
+.mb {
+  margin-bottom: 30px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+/* CSS CHO PHẦN HEADER */
+header {
+  box-shadow: 0px 0px 5px 2px gray;
+}
+
+.header {
+  background: rgb(0, 0, 0);
+  border: 1px solid #000;
+  font-size: 16px;
+  padding: 15px 5px 5px 5px;
+  border-bottom: 1px solid white;
+
+}
+
+.menu {
+  background: rgb(0, 0, 0);
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.dropdown {
+  width: 100px;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: #a0a0a0;
+  min-width: 150px;
+  margin-top: 15px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown_content a {
+  color: black;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 17px;
+}
+
+.dropdown_content a:hover {
+  background-color: #c9c9c9;
+  font-size: 17px;
+}
+
+.dropdown:hover .dropdown_content {
+  display: block;
+  margin-top: 15px;
+}
+
+/* css cho phần nội dung */
+.avata {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avata img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile:hover .detail {
+  display: block;
+}
+
+
+.detail {
+  display: none;
+  margin-top: 10px;
+}
+
+.detail li {
+  list-style: none;
+
+  padding: 10px 0px;
+
+
+}
+
+.detail li a {
+  color: rgb(0, 0, 0);
+}
+
+.icon_mk {
+  position: relative;
+}
+
+.icon_mk_sub {
+  position: absolute;
+  bottom: 215px;
+  left: 1000px;
+}
+
+td {
+  padding: 0 20px;
+}
+
+.form_binhluan tr {
+  margin-bottom: 10px;
+}
+
+.form_binhluan {
+  margin-top: 10px;
+}
+
+.catalog {
+  display: flex;
+  gap: 30px;
+}
+
+.boxleft {
+  width: 75%;
+}
+
+.boxright {
+  width: 25%;
+}
+
+.box_title {
+  display: flex;
+
+  background: #EEEE;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+  height: 30px;
+  align-items: center;
+
+}
+
+
+
+.box_content_ctsp {
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+
+.box_content_ctsp picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_action {
+  margin-left: 300px;
+}
+
+.box_action .box_action_child {
+  /* border: 1px solid white; */
+  height: 50px;
+  min-width: 100px;
+  margin-left: 20px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box_action_child .giohang_sp {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.fa-cart-shopping {
+  height: 25px;
+  margin-right: 5px;
+}
+
+.box_content_ctsp_mota {
+  margin-top: 20px;
+  width: 70%;
+}
+
+.tksp {
+  width: 100%;
+}
+
+.cart_ctsp {
+  width: 90%;
+  height: 40px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+
+}
+
+.hove_ctsp:hover {
+  transform: scale(1.1);
+}
+
+.cart_ctsp:hover {
+  color: red;
+}
+
+.box_content {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.box_content2 {
+  padding: 20px;
+  background: #EEEE;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  min-height: 200px;
+
+}
+
+.box_footer {
+  background: #EEEE;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px;
+  color: #333;
+  height: 30px;
+  align-items: center;
+}
+
+.banner {
+  width: 100%;
+  min-width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: 350px;
+  object-fit: fill;
+
+}
+
+.pre,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  height: 99%;
+  background-color: transparent;
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease-in-out;
+  border-radius: 0 3px 3px 0;
+  border: none;
+}
+
+.pre:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.pre {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.logout a {
+  text-decoration: none;
+  color: #000;
+}
+
+.items {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+img {
+  object-fit: scale-down;
+}
+
+.box_items {
+  border: 1px solid #EEEE;
+  border-radius: 5px;
+  /* text-align: center; */
+  height: 380px;
+  position: relative;
+  overflow: hidden;
+  padding-left: 5px;
+}
+
+.heart_sp {
+  left: 85%;
+  padding-top: 70px;
+  position: absolute;
+  height: 30px;
+  cursor: pointer;
+}
+
+
+.box_item_spcungloai {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box_items img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.box_items a {
+  text-decoration: none;
+  color: black;
+
+}
+
+.box_items .item_name {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.box_items .price {
+  margin: 10px 0;
+  color: red;
+  font-weight: 500;
+
+}
+
+.box_items_img:hover .add {
+  width: 100%;
+  bottom: 30%;
+  
+}
+
+.image_gh {
+  height: 80px;
+}
+
+.add a {
+  color: white;
+}
+
+.box_items_img {
+  margin-bottom: 10px;
+}
+
+.box_items_img .add {
+  transition: 0.5s ease-in-out;
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border-radius: 6px;
+  margin-top: 20px;
+  left: 0;
+}
+
+.box_items_img .add:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.cktien:focus-within .child_ck {
+  display: block;
+}
+
+.child_ck {
+  display: none;
+}
+span{
+  color: red;
+}
+.child_ck img {
+  object-fit: cover;
+  width: 180px;
+  height: 200px;
+
+}
+
+form td:last-child {
+  text-align: center;
+}
+
+.form_li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.form_li a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.form_li {
+  list-style: none;
+}
+
+.form_account {
+  line-height: 150%;
+}
+
+.formds_loai input[type="number"] {
+  width: 30px;
+}
+
+.css_soluong input {
+  display: flex;
+
+}
+
+.form_account input[type="email"],
+.form_account input[type="text"],
+.form_account input[type="password"],
+.form_content input[type="text"] {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 6px 10px;
+  margin-bottom: 12px;
+}
+
+.form_account input[type="checkbox"] {
+  border-radius: 5px;
+}
+
+.form_account input[type="reset"],
+.form_account input[type="submit"],
+.form_content input[type="submit"],
+.form_content input[type="reset"],
+.form_content input[type="button"] {
+  padding: 6px;
+  background: white;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+
+}
+
+.form_account input[type="submit"]:hover,
+.form_content input[type="submit"]:hover,
+.form_content input[type="reset"]:hover,
+.form_content input[type="button"]:hover {
+  background: #CCC;
+}
+
+/*  CSS CHO PHẦN DANH MỤC */
+.product_portfolio ul {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.product_portfolio ul li {
+  padding: 10px 20px;
+  background-color: #EEEE;
+  border-bottom: 1px #ccc solid;
+}
+
+.product_portfolio ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.product_portfolio ul li:hover {
+  background-color: #CCC;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.fa-magnifying-glass {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  left: 450px;
+  top: 8px;
+  height: 25px;
+}
+
+.form_tk input[type="submit"],
+.form_tk input[type="text"],
+.form_tk .dmsp {
+  padding: 5px 15px;
+  margin-left: 5px;
+
+}
+
+.box_comment input[type="text"],
+.box_comment input[type="submit"] {
+  padding: 10px 35px;
+  margin-top: 10px;
+}
+
+.box_comment input[type="text"] {
+  padding: 10px 700px 10px 5px;
+}
+
+.adddetail input {
+  float: right;
+  padding: 10px 15px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.box_search {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.box_search input {
+  padding: 10px 50px 10px 5px;
+  background-color: #ffff;
+  border-radius: 5px;
+  border: 1px #ccc solid;
+  margin-left: 130px;
+
+}
+
+.box_search input[type="submit"] {
+  cursor: pointer;
+}
+th{
+  border: 1px #000000 solid;
+}
+.selling_products img {
+  width: 20%;
+  height: 50px;
+  margin-right: 10px;
+}
+.selling_products img:hover {
+  transform: scale(1.1);
+}
+.selling_products a {
+  color: #000;
+  text-decoration: none;
+}
+
+.selling_products a:hover {
+  color: #000;
+
+}
+
+.banner2 img {
+  width: 60%;
+}
+
+/* CSS CHO ADMIN */
+.header_admin {
+  background-color: #EEE;
+  border: 1px #CCC solid;
+  color: #666;
+  border-radius: 5px;
+  padding: 10px 20px;
+
+}
+
+.menu_admin ul li a:hover {
+  color: red;
+}
+
+.font_title {
+  background-color: #EEE;
+  border: 1px #CCC solid;
+  color: #666;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.mr20 {
+  margin-right: 10px;
+}
+
+label {
+  display: flex;
+  justify-content: start;
+  font-size: 20px;
+  color: red;
+  margin-top: 5px;
+}
+
+
+
+.formds_loai table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px #000000 solid;
+}
+
+.formds_loai table td {
+  border: 1px #000000 solid;
+  /* box-shadow: 0px 1px gray; */
+  padding: 20px 10px;
+}
+
+.formds_loai table tr:first-child {
+  background-color: #ccc;
+  border: 1px #000000 solid;
+
+}
+
+.formds_loai table tr {
+  height: 50px;
+  border: 1px #000000 solid;
+}
+
+.formds_loai table tr:nth-child(2n):hover {
+  background-color: #EEE;
+}
+
+.box_footer {
+  margin-top: 300px;
+}
+
+/* CSS giỏ hàng */
+.httt {
+  display: flex;
+  justify-content: center;
+
+}
+
+.httt .thanhtoan {
+  margin-right: 10px;
+}
+
+.thanhtoansp {
+  min-height: 500px;
+}
+
+.thanhtoandh {
+  width: 200px;
+  height: 40px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn_thanhtoandh input[type=submit] {
+  background-color: red;
+  border-radius: 5px;
+}
+
+.success {
+  width: 110px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  border-radius: 10px;
+  font-size: 15px;
+  color: white;
+}
+
+.canced {
+  width: 110px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  border-radius: 10px;
+  font-size: 15px;
+  color: white;
+}
+
+.table_thanhtoan {
+  margin-top: 10px;
+}
+
+/* footer section starts */
+footer {
+  height: 450px;
+  background-color: #333;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  box-shadow: 0px 0px 5px 2px gray;
+}
+
+.left_footer {
+  display: grid;
+  grid-template-columns: 40% 1fr 1fr 1fr;
+  padding-top: 40px;
+  color: #fff;
+}
+
+.list_footer li {
+  list-style: none;
+  margin: 20px 10px 20px 0px;
+}
+
+.icon_footer {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.icon_footer span {
+  color: rgb(255, 163, 34);
+  padding: 10px;
+  border-radius: 100%;
+  background-color: #3e3e3e;
+  margin-right: 10px;
+}
+
+.text_footer {
+  padding-left: 10px;
+}
+
+.text_footer p {
+  font-size: 15px;
+  margin-top: 10px;
+  width: 80%;
+}
+
+.right_footer {
+  background-color: #3e3e3e;
+  padding-top: 40px;
+}
+
+.right_footer input[type="text"],
+input[type="email"] {
+  height: 25px;
+  width: 90%;
+  margin: 10px 0px;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.right_footer textarea {
+  margin: 10px 0px;
+  width: 90%;
+  padding-left: 5px;
+}
+
+.right_footer form {
+  margin-left: 20px;
+}
+
+.right_footer input[type="submit"] {
+  height: 35px;
+  width: 90%;
+  margin: 10px 0px;
+  border-radius: 5px;
+  background-color: orange;
+  color: white;
+}
